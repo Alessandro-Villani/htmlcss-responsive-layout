@@ -25,6 +25,10 @@
     margin: 0 auto;
 }
 
+.container.small{
+    max-width: 1000px;
+}
+
 .flex{
     display: flex;
 }
@@ -39,6 +43,7 @@
 
 .purple-bg{
     background-color: var(--purple);
+    color: white;
 }
 
 .white-bg{
@@ -56,6 +61,15 @@
 .debug{
     border: 1px dashed black;
 }
+
+.purple-txt{
+    color: var(--purple)
+}
+
+.black-txt{
+    color: black;
+}
+
 
 /*! GENERICS */
 
@@ -77,6 +91,10 @@ img{
     display: block;
 }
 
+p{
+    line-height: 1.5rem;
+}
+
 .row{
     width: 100%;
     flex-wrap: wrap;
@@ -93,6 +111,10 @@ img{
     border-radius: 1rem;
 }
 
+.card.r-3{
+    border-radius: 3rem;
+}
+
     /*+ BUTTONS */
 
     .btn{
@@ -105,14 +127,17 @@ img{
         padding: 0.5rem 1rem;
     }
 
-    .btn.btn-purple-txt{
-        color: var(--purple)
+    .btn-circle{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
     }
 
-    .btn.btn-black-txt{
+    .btn.black-txt{
         color: black;
     }
-
 
 /*! HEADER */
 
@@ -157,7 +182,6 @@ header{
         color: var(--grayblue);
         background-color: var(--skyblue);
         flex-basis: 100%;
-        line-height: 1.5rem;
         font-weight: bold;
     }
 
@@ -170,9 +194,8 @@ header{
         color: var(--blue);
     }
 
-    #developement h2{
+    #developement h3{
         color: var(--blue);
-        font-size: 1.3rem;
     }
 
     #developement a{
@@ -194,12 +217,37 @@ header{
 
     /*# PLANNING SECTION */
 
-    #planning .card{
-        min-height: 80px;
+    #planning .row{
+        align-items: flex-end;
+    }
+
+    #planning .col{
+        padding: 1rem 2.5rem;
+    }
+
+    #planning .card.flex{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    #planning .col:first-child .card{
+        padding: 0;
+        border-radius: 0;
     }
 
     #planning .col:last-child .card{
         flex-basis: 100%;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
+    #planning h2{
+        font-size: 2.5rem;
+    }
+    
+    #planning a {
+        font-weight: bold;
+        line-height: 50px;
     }
 
     /*# TESTIMONIALS SECTION */
@@ -320,6 +368,11 @@ footer .content{
 
         #planning .col{
             flex-basis: 50%;
+        }
+
+        #planning .col:last-child img{
+            max-width: 50%;
+            margin: 0 auto 1.5rem auto;
         }
 
         /*+ BENEFITS SECTION */
