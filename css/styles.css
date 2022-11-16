@@ -131,6 +131,12 @@ header ul{
     flex-basis: 100%;
 }
 
+/*! ABOUT US SECTION */
+
+#about-us .card{
+    min-height: 200px;
+}
+
 /*! MEDIA QUERIES */
 
     /*# Breakpoint 576  */
@@ -155,6 +161,16 @@ header ul{
 
         #benefits .col:first-child{
             flex-basis: 100%;
+        }
+
+        /*+ ABOUT US SECTION */
+
+        #about-us .col:first-child{
+            flex-basis: 60%;
+        }
+
+        #about-us .col:last-child{
+            flex-basis: 40%;
         }
 
         
@@ -188,6 +204,14 @@ header ul{
 
         #benefits .col:first-child{
             flex-basis: 100%;
+        }
+
+        #about-us .col:first-child{
+            flex-basis: 70%;
+        }
+
+        #about-us .col:last-child{
+            flex-basis: 30%;
         }
         
     }
