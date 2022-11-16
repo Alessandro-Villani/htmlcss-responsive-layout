@@ -115,6 +115,11 @@ header ul{
     flex-basis: 100%;
 }
 
+/*! TESTIMONIALS SECTION */
+
+#testimonials .card{
+    min-height: 80px;
+}
 
 /*! MEDIA QUERIES */
 
@@ -164,7 +169,7 @@ header ul{
         
         /*+ DEVELOPEMENT SECTION */
 
-        #developement .row{
+        .row.neg-margin{
             width: auto;
             margin: 0 -1rem;
         }
