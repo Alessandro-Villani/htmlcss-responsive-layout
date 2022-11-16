@@ -40,6 +40,10 @@
     background-color: white;
 }
 
+.center-text{
+    text-align: center;
+}
+
 .debug{
     border: 1px dashed black;
 }
@@ -141,6 +145,17 @@ header ul{
 
 #get-started .content{
     min-height: 10rem;
+}
+
+/*! FOOTER */
+
+footer{
+    background-color: var(--gray);
+    height: 15rem;
+}
+
+footer .content{
+    min-height: 15rem;
 }
 
 /*! MEDIA QUERIES */
