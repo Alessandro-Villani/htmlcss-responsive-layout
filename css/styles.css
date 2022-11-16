@@ -65,6 +65,7 @@ a{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 .row{
@@ -77,6 +78,27 @@ img{
     flex-basis: 100%;
     min-height: 80px;
 }
+
+    /*+ BUTTONS */
+
+    .btn{
+        padding: 2rem, 0.5rem;
+        border-radius: 1.5rem;
+        color: white;
+    }
+
+    .btn.btn-small{
+        padding: 0.5rem 1rem;
+    }
+
+    .btn.btn-purple-txt{
+        color: var(--purple)
+    }
+
+    .btn.btn-black-txt{
+        color: black;
+    }
+
 
 /*! HEADER */
 
@@ -92,60 +114,74 @@ header{
     padding: 1rem;
 }
 
-header nav{
-    justify-content: space-between;
-    align-items: center;
-}
+    /*# NAVBAR */
 
-header ul{
-    display: none;
-}
+    header nav{
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/*! DEVELOPMENT SECTION */
+    header ul{
+        display: none;
+    }
 
-#developement .card{
-    background-color: var(--skyblue);
-    flex-basis: 100%;   
-}
+    .navbar li{
+        padding: 1rem;
+    }
 
-#developement .col:first-child .card{
-    min-height: 300px;
-}
+    .navbar a{
+        color: white;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
 
-/*! PLANNING SECTION */
+/*! MAIN */
 
-#planning .card{
-    min-height: 80px;
-}
+    /*# DEVELOPMENT SECTION */
 
-#planning .col:last-child .card{
-    flex-basis: 100%;
-}
+    #developement .card{
+        background-color: var(--skyblue);
+        flex-basis: 100%;   
+    }
 
-/*! TESTIMONIALS SECTION */
+    #developement .col:first-child .card{
+        min-height: 300px;
+    }
 
-#testimonials .card{
-    min-height: 80px;
-}
+    /*# PLANNING SECTION */
 
-/*! BENEFITS SECTION */
+    #planning .card{
+        min-height: 80px;
+    }
 
-#benefits .card{
-    min-height: 80px;
-    flex-basis: 100%;
-}
+    #planning .col:last-child .card{
+        flex-basis: 100%;
+    }
 
-/*! ABOUT US SECTION */
+    /*# TESTIMONIALS SECTION */
 
-#about-us .card{
-    min-height: 200px;
-}
+    #testimonials .card{
+        min-height: 80px;
+    }
 
-/*! GET STARTED SECTION */
+    /*# BENEFITS SECTION */
 
-#get-started .content{
-    min-height: 10rem;
-}
+    #benefits .card{
+        min-height: 80px;
+        flex-basis: 100%;
+    }
+
+    /*# ABOUT US SECTION */
+
+    #about-us .card{
+        min-height: 200px;
+    }
+
+    /*# GET STARTED SECTION */
+
+    #get-started .content{
+        min-height: 10rem;
+    }
 
 /*! FOOTER */
 
