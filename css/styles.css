@@ -36,6 +36,10 @@
     background-color: var(--purple);
 }
 
+.white-bg{
+    background-color: white;
+}
+
 .debug{
     border: 1px dashed black;
 }
@@ -111,7 +115,6 @@ header ul{
 }
 
 #planning .col:last-child .card{
-    background-color: white;
     flex-basis: 100%;
 }
 
@@ -119,6 +122,13 @@ header ul{
 
 #testimonials .card{
     min-height: 80px;
+}
+
+/*! BENEFITS SECTION */
+
+#benefits .card{
+    min-height: 80px;
+    flex-basis: 100%;
 }
 
 /*! MEDIA QUERIES */
@@ -137,8 +147,17 @@ header ul{
             flex-basis: calc(100% / 3 * 2);
         }
 
-        
+        /*+ BENEFITS SECTION */
 
+        #benefits .col{
+            flex-basis: 50%;
+        }
+
+        #benefits .col:first-child{
+            flex-basis: 100%;
+        }
+
+        
     }
 
     /*# Breakpoint 768px */
@@ -160,6 +179,16 @@ header ul{
         #planning .col{
             flex-basis: 50%;
         }
+
+        /*+ BENEFITS SECTION */
+
+        #benefits .col{
+            flex-basis: calc(100% / 3);
+        }
+
+        #benefits .col:first-child{
+            flex-basis: 100%;
+        }
         
     }
 
@@ -167,7 +196,7 @@ header ul{
 
     @media screen and (min-width: 1201px){
         
-        /*+ DEVELOPEMENT SECTION */
+        /*+ GENERICS */
 
         .row.neg-margin{
             width: auto;
