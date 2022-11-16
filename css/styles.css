@@ -137,6 +137,12 @@ header ul{
     min-height: 200px;
 }
 
+/*! GET STARTED SECTION */
+
+#get-started .content{
+    min-height: 10rem;
+}
+
 /*! MEDIA QUERIES */
 
     /*# Breakpoint 576  */
