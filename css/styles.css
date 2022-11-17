@@ -309,6 +309,10 @@ header{
     }
 
     #benefits h2{
+        font-size: 1.8rem;
+    }
+
+    #benefits .white-bg h2{
         font-size: 2.5rem;
     }
 
