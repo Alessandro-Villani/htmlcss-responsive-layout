@@ -91,6 +91,10 @@ img{
     display: block;
 }
 
+img.circular{
+    clip-path: circle();
+}
+
 address{
     font-style: normal;
     text-transform: uppercase;
@@ -142,7 +146,7 @@ p{
     }
 
     .btn.btn-small{
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 1rem;
     }
 
     .btn-circle{
@@ -159,6 +163,7 @@ p{
    
     .btn i{
         color: white;
+        margin-right: 0.3rem;
     }
 
 /*! HEADER */
@@ -224,10 +229,6 @@ header{
         color: var(--blue);
     }
 
-    .fa-apple{
-        margin-right: 0.3rem;
-    }
-
     #developement img{
         max-height: 100%;
         width: auto;
@@ -276,7 +277,6 @@ header{
     }
 
     #testimonials img{
-        clip-path: circle();
         display: inline;
     }
 
@@ -323,7 +323,30 @@ header{
     /*# ABOUT US SECTION */
 
     #about-us .card{
-        min-height: 200px;
+        padding: 0;
+    }
+
+    #about-us h2{
+        font-size: 2.5rem;
+    }
+
+    #about-us .row:last-child .card{
+        position: relative;
+    }
+
+    #about-us img{
+        max-width: 50%;
+        display: inline;
+    }
+
+    #about-us span{
+        position: absolute;
+        top: -10px;
+        left: 40%;
+    }
+
+    #about-us h3{
+        font-size: 1.8rem;
     }
 
     /*# GET STARTED SECTION */
@@ -373,6 +396,13 @@ footer .content{
             max-width: 50%;
         }
 
+        /*+ TESTIMONIALS SECTION */
+
+        #testimonials img{
+            max-width: 70%;
+            margin: 0 auto 1.5rem auto;
+        }
+
         /*+ BENEFITS SECTION */
 
         #benefits .col{
@@ -387,13 +417,21 @@ footer .content{
 
         #about-us .col:first-child{
             flex-basis: 60%;
+            padding-right: 4.5rem;
         }
 
         #about-us .col:last-child{
             flex-basis: 40%;
         }
 
-        
+        #about-us img{
+            max-width: 100%;
+        }
+
+        #about-us span{
+            left: 70%;
+        }
+    
     }
 
     /*# Breakpoint 768px */
@@ -459,7 +497,7 @@ footer .content{
         #about-us .col:last-child{
             flex-basis: 30%;
         }
-        
+      
     }
 
     /*# Breakpoint 992px */
