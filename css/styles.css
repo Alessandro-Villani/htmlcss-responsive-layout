@@ -91,6 +91,17 @@ img{
     display: block;
 }
 
+address{
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h4{
+    font-weight: normal;
+}
+
 p{
     line-height: 1.5rem;
 }
@@ -115,6 +126,12 @@ p{
     border-radius: 3rem;
 }
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
     /*+ BUTTONS */
 
     .btn{
@@ -137,6 +154,10 @@ p{
 
     .btn.black-txt{
         color: black;
+    }
+   
+    .btn i{
+        color: white;
     }
 
 /*! HEADER */
@@ -190,7 +211,7 @@ header{
         padding-bottom: 0;
     }
 
-    #developement i{
+    #developement .icons{
         color: var(--blue);
     }
 
@@ -204,10 +225,6 @@ header{
 
     .fa-apple{
         margin-right: 0.3rem;
-    }
-
-    figure{
-        max-width: 50%;
     }
 
     #developement img{
@@ -237,8 +254,8 @@ header{
 
     #planning .col:last-child .card{
         flex-basis: 100%;
-        padding: 2rem;
-        font-size: 1.2rem;
+        padding: 1.5rem 1.2rem;
+        font-size: 1rem;
     }
 
     #planning h2{
@@ -253,8 +270,31 @@ header{
     /*# TESTIMONIALS SECTION */
 
     #testimonials .card{
-        min-height: 80px;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    #testimonials img{
+        clip-path: circle();
+        display: inline;
+    }
+
+    #testimonials .purple-bg p::before{
+        content: '\f10d';
+        font: var(--fa-font-solid);
+        font-size: 1.5rem;
+        margin-right: 0.3rem;
+        vertical-align: baseline;
+    }
+
+    #testimonials .purple-bg p::after{
+        content: '\f10e';
+        font: var(--fa-font-solid);
+        font-size: 1.5rem;
+        margin-left: 0.3rem;
+        vertical-align: baseline;
+    }
+    
 
     /*# BENEFITS SECTION */
 
@@ -316,6 +356,10 @@ footer .content{
             justify-content: space-between;
         }
 
+        #developement figure{
+            max-width: 50%;
+        }
+
         /*+ BENEFITS SECTION */
 
         #benefits .col{
@@ -373,6 +417,24 @@ footer .content{
         #planning .col:last-child img{
             max-width: 50%;
             margin: 0 auto 1.5rem auto;
+        }
+
+        /*+ TESTIMONIALS SECTION */
+
+        #testimonials .card.purple-bg{
+            flex-direction: row;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #testimonials img{
+            max-width: 30%;
+            margin-bottom: 0;
+        }
+
+        #testimonials .content{
+            max-width: 70%;
         }
 
         /*+ BENEFITS SECTION */
