@@ -135,9 +135,10 @@ p{
     /*+ BUTTONS */
 
     .btn{
-        padding: 0.2rem 2.5rem;
+        padding: 0.5rem 3rem;
         border-radius: 1.5rem;
         color: white;
+        display: inline-block;
     }
 
     .btn.btn-small{
@@ -185,6 +186,10 @@ header{
         display: none;
     }
 
+    header .btn{
+        display: inline;
+    }
+
     .navbar li{
         padding: 1rem;
     }
@@ -217,10 +222,6 @@ header{
 
     #developement h3{
         color: var(--blue);
-    }
-
-    #developement a{
-        display: inline-block;
     }
 
     .fa-apple{
@@ -303,6 +304,18 @@ header{
         flex-basis: 100%;
     }
 
+    #benefits .card p{
+        color: var(--grayblue);
+    }
+
+    #benefits h2{
+        font-size: 2.5rem;
+    }
+
+    #benefits h3{
+        font-size: 1.5rem;
+    }
+
     /*# ABOUT US SECTION */
 
     #about-us .card{
@@ -334,12 +347,8 @@ footer .content{
 
         /*+ GENERICS */
 
-        .card{
-            padding: 1rem;
-        }
-
         .col{
-            padding: 1rem 1rem;
+            padding: 1rem;
         }
 
         /*+ DEVELOPEMENT SECTION */
@@ -437,15 +446,7 @@ footer .content{
             max-width: 70%;
         }
 
-        /*+ BENEFITS SECTION */
-
-        #benefits .col{
-            flex-basis: calc(100% / 3);
-        }
-
-        #benefits .col:first-child{
-            flex-basis: 100%;
-        }
+        /*+ ABOUT US SECTION  */
 
         #about-us .col:first-child{
             flex-basis: 70%;
@@ -455,6 +456,20 @@ footer .content{
             flex-basis: 30%;
         }
         
+    }
+
+    /*# Breakpoint 992px */
+
+    /*+ BENEFITS SECTION */
+
+    @media screen and (min-width: 993px) {
+        #benefits .col{
+            flex-basis: calc(100% / 3);
+        }
+
+        #benefits .col:first-child{
+            flex-basis: 100%;
+        }
     }
 
     /*# Breakpoint 1200px */
