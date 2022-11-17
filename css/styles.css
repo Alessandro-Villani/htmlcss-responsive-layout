@@ -444,6 +444,7 @@ footer .content{
 
         #developement .card{
             justify-content: space-between;
+            padding: 2rem 1.2rem;
         }
 
         #developement figure{
@@ -515,6 +516,10 @@ footer .content{
 
         /*+ DEVELOPEMENT SECTION */
 
+        #developement .card{
+            padding: 2rem;
+        }
+
         #developement .col:first-child .card{
             flex-direction: row;
             gap: 3rem;
@@ -523,7 +528,7 @@ footer .content{
         #developement figure{
             align-self: flex-end;
         }
-    
+
         /*+ PLANNING SECTION */
 
         #planning .col{
