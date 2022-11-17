@@ -84,6 +84,7 @@ body{
 
 section {
     padding: 3rem 0;
+    scroll-margin-top: 5rem;
 }
 
 ul{
@@ -180,6 +181,10 @@ p{
     .btn i{
         color: white;
         margin-right: 0.3rem;
+    }
+
+    .btn:hover {
+        filter: brightness(1.2);
     }
 
 /*! HEADER */
