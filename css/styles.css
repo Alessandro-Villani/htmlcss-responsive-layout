@@ -292,6 +292,10 @@ header{
         flex-wrap: wrap;
     }
 
+    #testimonials .col:first-child .card{
+        padding: 0;
+    }
+
     #testimonials img{
         display: inline;
     }
@@ -343,7 +347,11 @@ header{
     }
 
     #about-us h2{
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    #about-us p{
+        line-height: 2.5rem;
     }
 
     #about-us .row:last-child .card{
@@ -392,11 +400,19 @@ header{
 
 footer{
     background-color: var(--gray);
-    height: 15rem;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3rem 0;
+}
+
+footer a{
+   text-decoration: underline;
 }
 
 footer .content{
-    min-height: 15rem;
+    margin: 0 auto;
+    max-width: 30rem;
+    padding: 0 1.8rem;
 }
 
 /*! MEDIA QUERIES */
@@ -431,9 +447,20 @@ footer .content{
 
         /*+ TESTIMONIALS SECTION */
 
+        #testimonials .card.purple-bg{
+            flex-direction: row;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+        }
+
         #testimonials img{
+            max-width: 30%;
+            margin-bottom: 0;
+        }
+
+        #testimonials .content{
             max-width: 70%;
-            margin: 0 auto 1.5rem auto;
         }
 
         /*+ BENEFITS SECTION */
@@ -503,24 +530,6 @@ footer .content{
             margin: 0 auto 1.5rem auto;
         }
 
-        /*+ TESTIMONIALS SECTION */
-
-        #testimonials .card.purple-bg{
-            flex-direction: row;
-            text-align: left;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #testimonials img{
-            max-width: 30%;
-            margin-bottom: 0;
-        }
-
-        #testimonials .content{
-            max-width: 70%;
-        }
-
         /*+ ABOUT US SECTION  */
 
         #about-us .col:first-child{
@@ -545,8 +554,21 @@ footer .content{
         #benefits .col:first-child{
             flex-basis: 100%;
         }
+
+        /*+ ABOUT US SECTION  */
+
+        #about-us .col:first-child{
+        flex-basis: 80%;
+        padding-right: 7rem;
+        }
+
+        #about-us .col:last-child{
+        flex-basis: 20%;
+        }
+
     }
 
+    
     /*# Breakpoint 1200px */
 
     @media screen and (min-width: 1201px){
